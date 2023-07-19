@@ -1,0 +1,286 @@
+     *{
+      font-family: sans;
+     }
+     p{
+      color: #1e3560;
+     } 
+
+     .flex-container {
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .responsive-container {
+      flex: 1 1 50%;
+    }
+
+    .circle-container {
+      display: flex;
+      flex: 1 1 50%;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .big-circle {
+      width: 220px;
+      height: 220px;
+      background: #ff5c39;
+      border-radius: 50%;
+      position: relative;
+      animation: pulse 2s infinite; 
+      cursor: pointer; 
+    }
+
+    .big-circle.clicked {
+    animation: none;
+    }
+
+    .kleiner-kreis {
+      width: 60px;
+      height: 60px;
+      background: #ff5c39;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-direction: row-reverse;
+    }
+
+    .kleiner-kreis11 {
+      bottom: 100px!important;
+    }
+
+    .kleiner-kreis2{
+      width: 60px;
+        height: 60px;
+        background: #ff5c39;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .kleiner-kreis-text {
+      opacity: 0;
+      transition: opacity 0.5s;
+      padding-right: 2rem;
+    }
+
+    .kleiner-kreis:hover .kleiner-kreis-text,
+    .kleiner-kreis2:hover .kleiner-kreis-text {
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+
+    .kleiner-kreis:nth-child(1),
+    .kleiner-kreis2:nth-child(1){
+      animation: rotate1 1s ease-in-out forwards;
+      animation-delay: 0s;
+      animation-play-state: paused;
+    }
+
+    .kleiner-kreis:nth-child(2),
+    .kleiner-kreis2:nth-child(2){
+      animation: rotate2 1.2s ease-in-out forwards;
+      animation-delay: 0s;
+      animation-play-state: paused;
+    }
+
+    .kleiner-kreis:nth-child(3),
+    .kleiner-kreis2:nth-child(3){
+      animation: rotate3 1.2s ease-in-out forwards;
+      animation-delay: 0.2s;
+      animation-play-state: paused;
+    }
+
+    .big-circle > *:nth-of-type(4) {
+      animation: rotate4 1s ease-in-out forwards;
+      animation-delay: 0.4s;
+      animation-play-state: paused;
+    }
+
+    .big-circle > *:nth-of-type(5) {
+      animation: rotate5 0.8s ease-in-out forwards;
+      animation-delay: 0.6s;
+      animation-play-state: paused;
+    }
+
+    .kleiner-kreis:nth-child(1):hover,
+    .kleiner-kreis2:nth-child(1):hover,
+    .kleiner-kreis:nth-child(2):hover,
+    .kleiner-kreis2:nth-child(2):hover,
+    .kleiner-kreis:nth-child(3):hover,
+    .kleiner-kreis2:nth-child(3):hover,
+    .big-circle > *:nth-of-type(4):hover,
+    .big-circle > *:nth-of-type(5):hover {
+      background: #f87f64e0;
+    }
+
+    .kleiner-kreis-text p{
+      padding-left: 2rem;
+    }
+
+    .kleiner-kreis-text p:hover{
+      color: #f39d8a;
+    }
+
+    .nachhaltig{
+      padding: 4.5rem 0 0 0.6rem;
+      color: #fff;
+    }
+
+    @keyframes rotate1 {
+      0% {
+        transform: translateX(-50%) rotate(0deg) translateY(150px) rotate(0deg);
+        opacity: 0;
+        width: 60px;
+        height: 60px;
+      }
+      1% {
+        opacity: 1; 
+      }
+      100% {
+        transform: translateX(-50%) rotate(1turn) translateY(150px) rotate(-1turn);
+        opacity: 1;
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    @keyframes rotate2 {
+      0% {
+        transform: translateX(-50%) rotate(0deg) translateY(150px) rotate(0deg);
+        opacity: 0;
+        width: 60px;
+        height: 60px; 
+      }
+      1% {
+        opacity: 1; 
+      }
+      100% {
+        transform: translateX(-50%) rotate(0.8turn) translateY(150px) rotate(-0.8turn);
+        opacity: 1;
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    @keyframes rotate3 {
+      0% {
+        transform: translateX(-50%) rotate(0deg) translateY(150px) rotate(0deg);
+        opacity: 0;
+        width: 60px;
+        height: 60px; 
+      }
+      1% {
+        opacity: 1; 
+      }
+      100% {
+        transform: translateX(-50%) rotate(0.6turn) translateY(150px) rotate(-0.6turn);
+        opacity: 1;
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    @keyframes rotate4 {
+      0% {
+        transform: translateX(-50%) rotate(0deg) translateY(150px) rotate(0deg);
+        opacity: 0;
+        width: 60px;
+        height: 60px; 
+      }
+      1% {
+        opacity: 1; 
+      }
+      100% {
+        transform: translateX(-50%) rotate(0.4turn) translateY(150px) rotate(-0.4turn);
+        opacity: 1;
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    @keyframes rotate5 {
+      0% {
+        transform: translateX(-50%) rotate(0deg) translateY(150px) rotate(0deg);
+        opacity: 0;
+        width: 60px;
+        height: 60px; 
+      }
+      1% {
+        opacity: 1; 
+      }
+      100% {
+        transform: translateX(-50%) rotate(0.2turn) translateY(150px) rotate(-0.2turn);
+        opacity: 1;
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .kleiner-kreis-responsive, .kleiner-kreis2-responsive {
+      display: none;
+      width: 30px;
+      height: 30px;
+      margin: 20px 38%;
+      background: #ff5c39;
+      border-radius: 50%;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @media (max-width: 800px) {
+      .kleiner-kreis, .kleiner-kreis2 {
+        display: none;
+      }
+      .kleiner-kreis-responsive, .kleiner-kreis2-responsive {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #ff5c39;
+      }
+      .kleiner-kreis-responsive:hover{
+        background-color: #f39d8a;
+      }
+      .kleiner-kreis-text p:hover{
+        color: #f39d8a;
+      }
+      .kleiner-kreis-text {
+        opacity: 1;
+      }
+      .circle-container {
+        height: 35vh;
+      }
+      .kleiner-kreis-text p {
+      padding-left: 3rem;
+    }
+    }
+
+    @media (max-width: 550px) {
+      .kleiner-kreis-responsive, .kleiner-kreis2-responsive {
+      margin: 20px 30%;
+    }
+    }
