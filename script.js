@@ -1,19 +1,17 @@
-    const bigCircle = document.querySelector('.big-circle');
-    const smallCircles = document.querySelectorAll('.kleiner-kreis, .kleiner-kreis2');
+const bigCircles = document.querySelectorAll('.big-circle'); // Ändern Sie 'querySelector' zu 'querySelectorAll', um alle '.big-circle' Elemente auszuwählen.
 
-    bigCircle.addEventListener('click', () => {
-      smallCircles.forEach(circle => circle.style.animationPlayState = 'running');
-    });
+bigCircles.forEach(bigCircle => {
+  let smallCircles = bigCircle.querySelectorAll('.kleiner-kreis, .kleiner-kreis2');
+  let smallCircleTexts = bigCircle.querySelectorAll('.kleiner-kreis-text');
 
-    const smallCircleTexts = document.querySelectorAll('.kleiner-kreis-text');
-
-    smallCircles.forEach((circle, index) => {
-    circle.addEventListener('animationend', () => {
-    smallCircleTexts[index].style.opacity = '1';
-      });
-    });
-
-    bigCircle.addEventListener('click', () => {
+  bigCircle.addEventListener('click', () => {
     smallCircles.forEach(circle => circle.style.animationPlayState = 'running');
     bigCircle.classList.add('clicked'); // Hinzufügen der 'clicked'-Klasse
+  });
+
+  smallCircles.forEach((circle, index) => {
+    circle.addEventListener('animationend', () => {
+      smallCircleTexts[index].style.opacity = '1';
     });
+  });
+});
