@@ -19,12 +19,16 @@
       flex: 0 0 50%;
       justify-content: center;
       align-items: center;
-      height: 50vh;
+      height: 35vh;
+  }
+
+  .circle-container.dritter{
+    flex: 0 0 100%!important;
   }
 
     .big-circle {
-      width: 220px;
-      height: 220px;
+      width: 250px;
+      height: 250px;
       background: #ff5c39;
       border-radius: 50%;
       position: relative;
@@ -34,6 +38,10 @@
 
     .big-circle.clicked {
     animation: none;
+    }
+
+    .big-circle.third-child {
+      flex-basis: 100%;
     }
 
     .kleiner-kreis {
@@ -138,7 +146,7 @@
     }
 
     .nachhaltig{
-      padding: 4.5rem 0 0 0.6rem;
+      padding: 5rem 0 0 1.6rem;
       color: #fff;
     }
 
