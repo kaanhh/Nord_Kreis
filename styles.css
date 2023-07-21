@@ -50,7 +50,7 @@
       background: #ff5c39;
       border-radius: 50%;
       position: absolute;
-      bottom: 80px;
+      bottom: 110px;
       left: 50%;
       transform: translateX(-50%);
       opacity: 0;
@@ -146,7 +146,23 @@
     }
 
     .nachhaltig{
-      padding: 5rem 0 0 1.6rem;
+      padding: 5.5rem 0 0 1.6rem;
+      color: #fff;
+    }
+    .hr {
+      padding: 5.5rem 0 0 6.6rem;
+      color: #fff;
+    }
+    .geschaftsentwicklung {
+      padding: 4.7rem 0 0 3rem;
+      color: #fff;
+    }
+    .technologie {
+      padding: 5.8rem 0 0 2.8rem;
+      color: #fff;
+    }
+    .marketing {
+      padding: 5rem 0 0 2.9rem;
       color: #fff;
     }
 
