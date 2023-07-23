@@ -88,12 +88,12 @@
     
     .kleiner-kreis-text {
       opacity: 0;
-      transition: opacity 0.8s ease-out 1s; 
+      transition: opacity 0.8s ease-out 0.7s; 
       padding-right: 2rem;
     }
     .kleiner-kreis-text2 {
       opacity: 0;
-      transition: opacity 0.8s ease-out 1s!important; 
+      transition: opacity 0.8s ease-out ; 
       padding-right: 2rem;
     }
 
