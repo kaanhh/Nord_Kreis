@@ -46,3 +46,4 @@ bigCircles.forEach(bigCircle => {
     isFirstClick = false; 
   });
 });
+
