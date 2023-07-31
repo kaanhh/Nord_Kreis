@@ -99,10 +99,10 @@
     }
 
     .kleiner-kreis2.kultur p{
-      width: 156px !important;
+      width: 170px !important;
     }
     .kleiner-kreis2.prchain p{
-      width: 65px !important;
+      width: 61px !important;
     }
     .kultur.kleiner-kreis-text p{
       padding-left: 0rem!important;
@@ -114,7 +114,7 @@
     }
 
     .kleiner-kreis2.prchain2 p {
-      width: 198px !important;
+      width: 176px !important;
     }
 
 
@@ -130,23 +130,32 @@
       padding-right: 2rem;
     }
     .kleiner-kreis-text p, .kleiner-kreis-text2 p{
-     width: 10rem;
+     width: 11rem;
     }
 
     .marketing .kleiner-kreis-text p{
-      width: 12.8rem!important;
+      width: 13.4rem!important;
      }
      .marketing .kleiner-kreis-text2 p{
-      width: 11rem !important;
+      width: 10rem !important;
       padding-right: 0.2rem;
      }
      
     .techno .kleiner-kreis-text p{
-      width: 8.8rem!important;
+      width: 11.8rem!important;
      }
 
     .technologie.kleiner-kreis-text2 p{
       width: 12rem!important;
+     }
+
+     #digital{
+      width: 7.8rem !important;
+      padding-left: 0rem!important;
+     }
+
+     #organisation{
+      width: 9.8rem !important;
      }
 
     .kleiner-kreis:hover .kleiner-kreis-text,
