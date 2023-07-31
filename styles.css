@@ -97,10 +97,27 @@
         justify-content: flex-end;
         align-items: center;
     }
+
+    .kleiner-kreis2.kultur p{
+      width: 156px !important;
+    }
+    .kleiner-kreis2.prchain p{
+      width: 65px !important;
+    }
+    .kultur.kleiner-kreis-text p{
+      padding-left: 0rem!important;
+    }
+
     .prchain{
         left: 55%!important;
 
     }
+
+    .kleiner-kreis2.prchain2 p {
+      width: 198px !important;
+    }
+
+
 
     .kleiner-kreis-text {
       opacity: 0;
@@ -113,8 +130,24 @@
       padding-right: 2rem;
     }
     .kleiner-kreis-text p, .kleiner-kreis-text2 p{
-      width: 100%;
+     width: 10rem;
     }
+
+    .marketing .kleiner-kreis-text p{
+      width: 12.8rem!important;
+     }
+     .marketing .kleiner-kreis-text2 p{
+      width: 11rem !important;
+      padding-right: 0.2rem;
+     }
+     
+    .techno .kleiner-kreis-text p{
+      width: 8.8rem!important;
+     }
+
+    .technologie.kleiner-kreis-text2 p{
+      width: 12rem!important;
+     }
 
     .kleiner-kreis:hover .kleiner-kreis-text,
     .kleiner-kreis2:hover .kleiner-kreis-text {
