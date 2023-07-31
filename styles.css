@@ -102,7 +102,6 @@
 
     }
 
-    
     .kleiner-kreis-text {
       opacity: 0;
       transition: opacity 0.8s ease-out 0.7s; 
@@ -112,6 +111,9 @@
       opacity: 0;
       transition: opacity 0.8s ease-out ; 
       padding-right: 2rem;
+    }
+    .kleiner-kreis-text p, .kleiner-kreis-text2 p{
+      width: 100%;
     }
 
     .kleiner-kreis:hover .kleiner-kreis-text,
@@ -159,7 +161,7 @@
     .kleiner-kreis2:nth-child(2):hover,
     .kleiner-kreis:nth-child(3):hover,
     .kleiner-kreis2:nth-child(3):hover,
-    .big-circle > *:nth-of-type(4):hover,
+    /*.big-circle > *:nth-of-type(4):hover,*/
     .big-circle > *:nth-of-type(5):hover {
       background: #f87f64e0;
     }
@@ -173,23 +175,26 @@
     }
 
     .nachhaltig{
-      padding: 5.5rem 0 0 1.6rem;
       color: #fff;
     }
+
+    .zentriert{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
     .hr {
-      padding: 5.5rem 0 0 6.6rem;
       color: #fff;
     }
     .geschaftsentwicklung {
-      padding: 4.7rem 0 0 3rem;
       color: #fff;
     }
     .technologie {
-      padding: 5.8rem 0 0 2.8rem;
       color: #fff;
     }
     .marketing {
-      padding: 5rem 0 0 2.9rem;
       color: #fff;
     }
 
@@ -365,7 +370,4 @@
         color: #fff;
       }
     }
-    
-    
-
- 
+     
