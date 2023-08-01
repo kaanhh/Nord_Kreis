@@ -117,8 +117,6 @@
       width: 176px !important;
     }
 
-
-
     .kleiner-kreis-text {
       opacity: 0;
       transition: opacity 0.8s ease-out 0.7s; 
@@ -225,6 +223,8 @@
       justify-content: center;
       align-items: center;
       height: 100%;
+      border: white solid 3px;
+      border-radius: 128px;
     }
 
     .hr {
