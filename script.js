@@ -1,8 +1,8 @@
-const bigCircles = document.querySelectorAll('.big-circle');
+const bigCircles = document.querySelectorAll('.big-circle, .big-circle2');
 let activeCircle = null;
 
 bigCircles.forEach(bigCircle => {
-  let smallCircles = bigCircle.querySelectorAll('.kleiner-kreis, .kleiner-kreis2');
+  let smallCircles = bigCircle.querySelectorAll('.kleiner-kreis, .kleiner-kreis2,.kleiner-kreis_SIEBEN , .kleiner-kreis0_SIEBEN, .kleiner-kreis1_SIEBEN, .kleiner-kreis2_SIEBEN, .kleiner-kreis3_SIEBEN, .kleiner-kreis4_SIEBEN');
   let smallCircleTexts = bigCircle.querySelectorAll('.kleiner-kreis-text, .kleiner-kreis-text2');
   let isFirstClick = true; 
 
@@ -15,7 +15,7 @@ bigCircles.forEach(bigCircle => {
     }
 
     if (activeCircle) {
-      let prevSmallCircles = activeCircle.querySelectorAll('.kleiner-kreis, .kleiner-kreis2');
+      let prevSmallCircles = activeCircle.querySelectorAll('.kleiner-kreis, .kleiner-kreis2, .kleiner-kreis_SIEBEN , .kleiner-kreis0_SIEBEN, .kleiner-kreis1_SIEBEN, .kleiner-kreis2_SIEBEN, .kleiner-kreis3_SIEBEN, .kleiner-kreis4_SIEBEN');
       let prevSmallCircleTexts = activeCircle.querySelectorAll('.kleiner-kreis-text, .kleiner-kreis-text2');
 
       prevSmallCircles.forEach(circle => {
@@ -45,5 +45,14 @@ bigCircles.forEach(bigCircle => {
     activeCircle = bigCircle;
     isFirstClick = false; 
   });
-});
 
+  bigCircle.addEventListener('mouseover', () => {
+    bigCircle.style.backgroundColor = '#8befd3';
+    bigCircle.style.color = '#e95420'; 
+    
+  });
+
+  bigCircle.addEventListener('mouseout', () => {
+    bigCircle.style.backgroundColor = ''; 
+  });
+});
