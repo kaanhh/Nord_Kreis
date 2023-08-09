@@ -220,7 +220,7 @@
       opacity: 0;
       top: 44%;
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-start;
       align-items: center;
       flex-direction: row-reverse;
     }
@@ -252,7 +252,23 @@
     .kultur.kleiner-kreis-text p{
       padding-left: 0rem!important;
     }
+    .kleiner-kreis-text3 p{
+      width: 7rem!important;
+    }
+    .kleiner-kreis-text4 p {
+      width: 12rem !important;
+    }
+    .kleiner-kreis-text5 p {
+      width: 14.3rem !important;
+    }
+    .kleiner-kreis-text1 p{
+      padding-right: 2rem !important;
+    }
     
+    .kleiner-kreis-text a, .kleiner-kreis-text0 a, .kleiner-kreis-text1 a, .kleiner-kreis-text2 a, .kleiner-kreis-text3 a, .kleiner-kreis-text4 a{  
+      pointer-events: none; 
+  }
+  
 
     /************** START PRCHAIN SIEBEN *******************/
     .prchain{
@@ -293,6 +309,14 @@
     .kleiner-kreis-text p, .kleiner-kreis-text2 p{
      width: 11rem;
     }
+
+    .kleiner-kreis-text0{
+      padding-right: 1rem !important;
+    }
+    .kleiner-kreis-text0 p{
+      width: 5rem;
+    }
+
 
     .marketing .kleiner-kreis-text p{
       width: 13.4rem!important;

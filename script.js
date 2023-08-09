@@ -3,20 +3,21 @@ let activeCircle = null;
 
 bigCircles.forEach(bigCircle => {
   let smallCircles = bigCircle.querySelectorAll('.kleiner-kreis, .kleiner-kreis2,.kleiner-kreis_SIEBEN , .kleiner-kreis0_SIEBEN, .kleiner-kreis1_SIEBEN, .kleiner-kreis2_SIEBEN, .kleiner-kreis3_SIEBEN, .kleiner-kreis4_SIEBEN');
-  let smallCircleTexts = bigCircle.querySelectorAll('.kleiner-kreis-text, .kleiner-kreis-text2');
+  let smallCircleTexts = bigCircle.querySelectorAll('.kleiner-kreis-text, .kleiner-kreis-text2, .kleiner-kreis-text0, .kleiner-kreis-text1, .kleiner-kreis-text3');
   let isFirstClick = true; 
 
   bigCircle.addEventListener('click', () => {
     if (activeCircle === bigCircle) {
       smallCircleTexts.forEach(text => {
         text.style.opacity = text.style.opacity === '0' ? '1' : '0';
+        text.querySelector('a').style.pointerEvents = text.style.opacity === '0' ? 'none' : 'auto';  // Hier setzen wir pointer-events je nach opacity
       });
       return; 
     }
 
     if (activeCircle) {
       let prevSmallCircles = activeCircle.querySelectorAll('.kleiner-kreis, .kleiner-kreis2, .kleiner-kreis_SIEBEN , .kleiner-kreis0_SIEBEN, .kleiner-kreis1_SIEBEN, .kleiner-kreis2_SIEBEN, .kleiner-kreis3_SIEBEN, .kleiner-kreis4_SIEBEN');
-      let prevSmallCircleTexts = activeCircle.querySelectorAll('.kleiner-kreis-text, .kleiner-kreis-text2');
+      let prevSmallCircleTexts = activeCircle.querySelectorAll('.kleiner-kreis-text, .kleiner-kreis-text2, .kleiner-kreis-text0, .kleiner-kreis-text1, .kleiner-kreis-text3, .kleiner-kreis-text4');
 
       prevSmallCircles.forEach(circle => {
         circle.style.animationPlayState = 'paused';
@@ -24,6 +25,7 @@ bigCircles.forEach(bigCircle => {
 
       prevSmallCircleTexts.forEach(text => {
         text.style.opacity = '0';
+        text.querySelector('a').style.pointerEvents = 'none';  // Hier setzen wir pointer-events auf none
       });
 
       activeCircle.classList.remove('clicked');
@@ -39,6 +41,7 @@ bigCircles.forEach(bigCircle => {
         text.style.transitionDelay = '0s';
       }
       text.style.opacity = '1';
+      text.querySelector('a').style.pointerEvents = 'auto';  // Hier setzen wir pointer-events auf auto
     });
 
     bigCircle.classList.add('clicked');
@@ -56,3 +59,4 @@ bigCircles.forEach(bigCircle => {
     bigCircle.style.backgroundColor = ''; 
   });
 });
+
