@@ -264,6 +264,15 @@
     .kleiner-kreis-text1 p{
       padding-right: 2rem !important;
     }
+    .kleiner-kreis-text6 p{
+      width: 11rem!important;
+    }
+    .kleiner-kreis-text7 p{
+      width: 6.3rem!important;
+    }
+    .kleiner-kreis-text8 p{
+      width: 8.5rem!important;
+    }
     
     .kleiner-kreis-text a, .kleiner-kreis-text0 a, .kleiner-kreis-text1 a, .kleiner-kreis-text2 a, .kleiner-kreis-text3 a, .kleiner-kreis-text4 a{  
       pointer-events: none; 
