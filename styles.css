@@ -81,6 +81,7 @@
       justify-content: flex-end;
       align-items: center;
       flex-direction: row-reverse;
+      border: solid white 2px;
     }
 
     .kleiner-kreis3 {
@@ -98,6 +99,7 @@
       justify-content: flex-end;
       align-items: center;
       flex-direction: row-reverse;
+      border: solid white 2px;
     }
 
     .kleiner-kreis11 {
@@ -118,6 +120,7 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        border: solid white 2px;
     }
 
     /*********************************************************************
@@ -139,6 +142,7 @@
       justify-content: flex-end;
       align-items: center;
       flex-direction: row-reverse;
+      border: solid white 2px;
     }
 
     .kleiner-kreis3_SIEBEN {
@@ -155,6 +159,7 @@
       justify-content: flex-end;
       align-items: center;
       flex-direction: row-reverse;
+      border: solid white 2px;
     }
     
     .kleiner-kreis4_SIEBEN {
@@ -172,6 +177,7 @@
       justify-content: flex-end;
       align-items: center;
       flex-direction: row-reverse;
+      border: solid white 2px;
     }
 
     .kleiner-kreis5_SIEBEN {
@@ -189,6 +195,7 @@
       justify-content: flex-end;
       align-items: center;
       flex-direction: row-reverse;
+      border: solid white 2px;
     }
 
  
@@ -206,6 +213,7 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        border: solid white 2px;
     }
 
     .kleiner-kreis1_SIEBEN {
@@ -223,6 +231,7 @@
       justify-content: flex-start;
       align-items: center;
       flex-direction: row-reverse;
+      border: solid white 2px;
     }
 
     .kleiner-kreis2_SIEBEN{
@@ -239,6 +248,7 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        border: solid white 2px;
     }
     /*************************** SIEBEN ENDE *********************************/
 
@@ -756,7 +766,7 @@
         flex-grow: 1;
       }
       
-      .big-circle {
+      .big-circle, .big-circle2 {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -787,6 +797,7 @@
         width: 30px;
         height: 30px;
         margin-left: -10rem;
+        border: solid white 2px;
       }
 
       .kleiner-kreis-text p {
