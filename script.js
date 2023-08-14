@@ -64,4 +64,10 @@ bigCircles.forEach(bigCircle => {
 
   bigCircle.addEventListener('mouseover', () => {
     bigCircle.style.backgroundColor = '#8befd3';
-    bigCircle.style.color = '#e95420
+    bigCircle.style.color = '#e95420';
+  });
+
+  bigCircle.addEventListener('mouseout', () => {
+    bigCircle.style.backgroundColor = '';
+  });
+});
