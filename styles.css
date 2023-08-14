@@ -284,7 +284,7 @@
       width: 8.5rem!important;
     }
     
-    .kleiner-kreis-text a, .kleiner-kreis-text0 a, .kleiner-kreis-text1 a, .kleiner-kreis-text2 a, .kleiner-kreis-text3 a, .kleiner-kreis-text4 a{  
+    .kleiner-kreis-text a, .kleiner-kreis-text0 a, .kleiner-kreis-text1 a, .kleiner-kreis-text2 a, .kleiner-kreis-text3 a, .kleiner-kreis-text4 a, .kleiner-kreis-text5 a, .kleiner-kreis-text6 a, .kleiner-kreis-text7 a, .kleiner-kreis-text8 a{  
       pointer-events: none; 
   }
   
@@ -326,7 +326,7 @@
       padding-right: 2rem;
     }
     .kleiner-kreis-text p, .kleiner-kreis-text2 p{
-     width: 11rem;
+     width: 12rem;
     }
 
     .kleiner-kreis-text0{
@@ -341,7 +341,7 @@
       width: 13.4rem!important;
      }
      .marketing .kleiner-kreis-text2 p{
-      width: 10rem !important;
+      width: 9rem !important;
       padding-right: 0.2rem;
      }
      
@@ -459,7 +459,7 @@
     }
 
     .kleiner-kreis-text p{
-      padding-left: 2rem;
+      padding-left: 2.5rem;
     }
 
     .kleiner-kreis-text p:hover{
@@ -745,6 +745,11 @@
 
     @media screen and (max-width: 800px) {
     
+      .kleiner-kreis-text a, .kleiner-kreis-text0 a, .kleiner-kreis-text1 a, .kleiner-kreis-text2 a, .kleiner-kreis-text3 a, .kleiner-kreis-text4 a{  
+        pointer-events:visible;
+        text-decoration: none;
+      }
+
       .zentriert{
         border: 0px;
         border-radius: 0px;
@@ -771,7 +776,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        animation: none;
+        animation: none!important;
         border: solid #fff;
       }
     
