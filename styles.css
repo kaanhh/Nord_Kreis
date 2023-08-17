@@ -263,32 +263,32 @@
       padding-left: 0rem!important;
     }
     .kleiner-kreis-text3 p{
-      width: 7rem!important;
+      width: 6.5rem!important;
     }
     .kleiner-kreis-text4 p {
-      width: 12rem !important;
+      width: 11rem !important;
     }
     .kleiner-kreis-text5 p {
-      width: 14.3rem !important;
+      width: 13.5rem !important;
     }
     .kleiner-kreis-text1 p{
-      padding-right: 2rem !important;
+      padding-right: 2.4rem !important;
     }
     .kleiner-kreis-text6 p{
-      width: 11rem!important;
+      width: 10rem!important;
     }
     .kleiner-kreis-text7 p{
       width: 6.3rem!important;
     }
     .kleiner-kreis-text8 p{
-      width: 8.5rem!important;
+      width: 8.3rem!important;
     }
     
     .kleiner-kreis-text a, .kleiner-kreis-text0 a, .kleiner-kreis-text1 a, .kleiner-kreis-text2 a, .kleiner-kreis-text3 a, .kleiner-kreis-text4 a, .kleiner-kreis-text5 a, .kleiner-kreis-text6 a, .kleiner-kreis-text7 a, .kleiner-kreis-text8 a{  
       pointer-events: none; 
   }
   
-
+  
     /************** START PRCHAIN SIEBEN *******************/
     .prchain{
         left: 55%!important;
@@ -317,14 +317,18 @@
 
     .kleiner-kreis-text {
       opacity: 0;
-      transition: opacity 0.8s ease-out 0.7s; 
+      transition: opacity 0.4s ease-out 0.4s; 
       padding-right: 2rem;
     }
     .kleiner-kreis-text2 {
       opacity: 0;
-      transition: opacity 0.8s ease-out ; 
       padding-right: 2rem;
     }
+
+    .kleiner-kreis-text0, .kleiner-kreis-text2, .kleiner-kreis-text1, .kleiner-kreis-text3, .kleiner-kreis-text4, .kleiner-kreis-text5, .kleiner-kreis-text6, .kleiner-kreis-text7, .kleiner-kreis-text8{
+      transition: opacity 0.4s ease-out 0.4s; 
+    }
+
     .kleiner-kreis-text p, .kleiner-kreis-text2 p{
      width: 12rem;
     }
@@ -543,7 +547,7 @@
         opacity: 1; 
       }
       100% {
-        transform: translateX(-50%) rotate(0.4turn) translateY(150px) rotate(-0.4turn);
+        transform: translateX(-50%) rotate(0.45turn) translateY(150px) rotate(-0.45turn);
         opacity: 1;
         width: 30px;
         height: 30px;
@@ -716,6 +720,7 @@
   }
 }
 /***********************************ENDE SIEBEN*************************************/
+
 
 
     .kleiner-kreis-responsive, .kleiner-kreis2-responsive {

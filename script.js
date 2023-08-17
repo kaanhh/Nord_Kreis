@@ -30,6 +30,9 @@ bigCircles.forEach(bigCircle => {
                 text.style.opacity = newOpacity;
                 text.querySelector('a').style.pointerEvents = newOpacity === '0' ? 'none' : 'auto';
             });
+
+
+            
             return;
         }
 
@@ -39,6 +42,7 @@ bigCircles.forEach(bigCircle => {
 
             prevSmallCircles.forEach(circle => {
                 circle.style.animationPlayState = 'paused';
+                circle.style.opacity = '0';
             });
 
             prevSmallCircleTexts.forEach(text => {
@@ -60,11 +64,12 @@ bigCircles.forEach(bigCircle => {
             }
             text.style.opacity = '1';
         });
-
+        
         bigCircle.classList.add('clicked');
         activeCircle = bigCircle;
         isFirstClick = false;
     });
+    
 
     bigCircle.addEventListener('mouseover', () => {
         bigCircle.style.backgroundColor = '#8befd3';
